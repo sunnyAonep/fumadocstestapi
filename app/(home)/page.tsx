@@ -2,13 +2,32 @@ import Link from 'next/link';
 
 export default function HomePage() {
   return (
-    <main className="flex h-screen flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">Hello World</h1>
-      <p className="text-fd-muted-foreground">
+    <main
+      style={{
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        textAlign: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <h1
+        style={{
+          fontSize: '2rem',
+          fontWeight: 'bold',
+          marginBottom: '1rem',
+        }}
+      >
+        Hello World
+      </h1>
+      <p>
         You can open{' '}
         <Link
           href="/docs"
-          className="text-fd-foreground font-semibold underline"
+          style={{
+            fontWeight: '600',
+            textDecoration: 'underline',
+          }}
         >
           /docs
         </Link>{' '}
